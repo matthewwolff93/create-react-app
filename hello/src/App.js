@@ -1,10 +1,10 @@
 import React from 'react';
 import HelloWorldList from './HelloWorldList';
 
-import './App.css';
+import styles from './App.css';
 
 const App = () => (
-	<div className="App">
+	<div className={styles.App}>
 		<HelloWorldList />
 	</div>
 );

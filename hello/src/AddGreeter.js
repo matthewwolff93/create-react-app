@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AddGreeter.css';
+import styles from './AddGreeter.css';
 
 class AddGreeter extends Component {
 
@@ -21,7 +21,7 @@ class AddGreeter extends Component {
 
 	render() {
 		return (
-			<div className="AddGreeter">
+			<div className={styles.AddGreeter}>
 				<input type="text" onChange={this.handleUpdate} value={this.state.greetingName} />
 				&nbsp;&nbsp;
 				<button onClick={this.addGreeting}>Add</button>

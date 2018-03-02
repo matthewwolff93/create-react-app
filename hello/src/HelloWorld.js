@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './HelloWorld.css';
+import styles from './HelloWorld.css';
 
 class HelloWorld extends Component {
 
@@ -21,7 +21,7 @@ class HelloWorld extends Component {
 
 	render() {
 		return (
-			<div className="HelloWorld">
+			<div className={styles.HelloWorld}>
 				{this.state.greeting} {this.props.name}!
 				<br />
 				<button className="frenchify" onClick={this.frenchify}>Frenchify!</button>

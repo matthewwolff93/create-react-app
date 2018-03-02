@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './HelloWorldList.css';
+import styles from './HelloWorldList.css';
 
 import HelloWorld from './HelloWorld';
 import AddGreeter from './AddGreeter';
@@ -32,7 +32,7 @@ class HelloWorldList extends Component {
 
 	render() {
 		return (
-			<div className="HelloWorldList">
+			<div className={styles.HelloWorldList}>
 				<AddGreeter addGreeting={this.addGreeting} />
 				{this.renderGreetings()}
 			</div>
